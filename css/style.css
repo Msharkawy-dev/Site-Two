@@ -1,0 +1,1203 @@
+/*
+
+////////////////////////////////////////////////////////////////////////////// */
+/* <!-- ================================================================================== -->
+    <!-- genral .... for all sections -->
+<!-- .......................................... --> */
+
+*{
+
+   margin: 0px; 
+   padding: 0px;
+   box-sizing: border-box;
+
+}
+
+/* *********************************************** */
+
+.body1{
+
+    background-color:white;
+    
+}
+
+/* =================== */
+
+.body1 a{
+
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(179, 15, 15);
+
+}
+
+/* =================== */
+
+.main_section,.Special_category_section,.Penelope_Astrid_section,.Delivery_section,
+.Featured_Products_section,.main_section,.main_section,.main_section
+{
+
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+}
+
+/* =================== */
+
+.header_content,.main_banner,.Special_category_content,.Penelope_Astrid_content
+,.Delivery_content,.Featured_Products_content
+{
+
+    width: 80%;
+    text-align: center;
+    margin: auto;
+
+}
+
+/* =================== */
+
+.Special_category_content_title h1,
+.Featured_Products_content_title h1{
+
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin:auto;
+    margin-top: -90px;
+    padding-bottom: 10px;
+
+}
+
+/* =================== */
+
+.lin{
+
+    margin:auto;
+    height: 2px;
+    width: 100px;
+    background-color: rgb(104, 21, 46);
+    margin-top: 5px;margin-bottom: 30px;
+    transform: scale(100%);
+    transition: 1s;
+
+}
+
+/* =================== */
+
+.lin:hover{
+
+    transform: scale(160%);
+    height: 2px;
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* <!-- ================================================================================== -->
+    <!-- header section -->   */
+/* <!-- .......................................... --> */
+
+.header{
+
+    width: 80%;
+    height: 120px;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+/* =================== */
+
+.navegator{
+
+    position: absolute;
+    margin: auto; 
+
+ }
+
+/* =================== */
+
+.main_minue{
+
+    margin-top: 40x;
+    margin-left: 400px;
+
+}
+
+/* =================== */
+
+.main_minue_item{
+
+    position: relative;
+
+}
+
+/* =================== * */
+
+.main_minue_item{
+
+    list-style:none;
+    display:inline;
+    margin-left: 20px;  
+    padding: 10px 10px;
+
+} 
+
+/* =================== */
+
+.main_minue_item:hover{
+
+    background-color: rgba(240, 205, 154, 0.89);
+
+}
+
+/* =================== */
+
+.main_minue_item:hover .main_minue_item_link{
+
+    color: rgb(119, 68, 10);
+
+}
+
+/* =================== */
+
+.main_minue_item_link::before{
+
+    content: "";
+    position: absolute;
+
+    border-style: solid;
+    border-width: 0px 2px;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 95%;
+
+    transform: scale(1,0);
+    transition: 0.3s; 
+     
+}
+
+/* =================== */
+
+.main_minue_item_link:hover::before{
+
+    transform: scale(1,1);
+    border-color: rgb(56, 4, 4);
+    color: rgb(202, 77, 77);
+
+}
+
+/* =================== */
+
+.main_minue_item_link::after{
+
+    content: "";
+    position: absolute;
+
+    border-style: solid;
+    border-color: rgb(56, 4, 4);
+    border-width: 2px 0px;
+
+    top: 0;
+    left: 0;
+
+    transform: scale(0,1);
+
+    height: 95%;
+    width: 98%;
+
+    transition: 0.3s; 
+     
+}
+
+/* =================== */
+
+ .main_minue_item_link:hover::after{
+
+    transform: scale(1,1);
+    transition-delay: 0.2s;
+    border-color: rgb(56, 4, 4);
+    color: rgb(202, 77, 77);
+
+}
+
+ /* =================== */
+
+.logo1,.logo2{
+
+    height: 60px;
+    float: left;
+    position: relative;
+
+}
+
+/* =================== */
+
+.logo1{
+
+    width: 170px;
+    padding: 10px;
+    margin-left: 75px;
+    margin-top: -10px;
+
+}
+
+/* =================== */
+
+.logo2{
+
+    position: absolute;
+    width: 300px;
+    padding: 15px;
+    margin-left: 1200px;
+    margin-top: 0px;
+
+}
+
+/* =================== */
+
+.logo2 i{
+
+    font-size: 25px;
+
+}
+/* =================== */
+
+.logo2 i:hover{
+
+    color: rgb(223, 84, 84);
+
+}
+
+/* =================== */
+
+.logo2 .sbn1,.logo2 .sbn2{
+
+    font-size: 15px;
+    padding: 1px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+/* =================== */
+
+.logo2 .sbn1{
+
+    height: 18;
+    width: 18;
+    background-color: brown;
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+
+}
+
+/* =================== */
+
+.main_minue_item:hover .sub_menue{
+
+    visibility: visible;
+    transform: scale(1);
+    opacity: 0.7;
+    color: rgb(56, 5, 5);
+    border-color:rgb(71, 9, 9);
+
+}
+
+/* =================== */
+
+.sub_menue ul{
+
+    list-style: none;
+    display: table-cell;
+    text-align: left;
+
+}
+
+/* =================== */
+
+.sub_menue{
+
+    position:absolute;
+    visibility: hidden; 
+    top: 40px;
+    left: 0;
+    width: 520px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid brown;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.3s , visibility .3s;
+    margin: auto;
+
+}
+
+/* =================== */
+
+.sub_menue_v{
+
+    display: inline;
+    margin: 20px 23px;
+    padding-top: 20px;
+}
+
+/* =================== */
+
+.sub_menue_v ul li a:hover{
+
+    color: rgb(27, 2, 2);
+    border-top: 1px rgb(102, 17, 17) solid;
+    border-bottom: 1px rgb(102, 17, 17) solid;
+    background-color: rgba(247, 216, 117, 0.89);
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+ /* <!-- ================================================================================== -->
+    /* <!-- main_section --> */ 
+/* <!-- .......................................... --> */
+
+.main_banner{
+
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    /* position: absolute; */
+    margin: top 0px;
+
+}
+
+/* =================== */
+
+.main_banner_img{
+
+    margin: auto;
+    height: 80%;
+    width: 80%;
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* <!-- ================================================================================== --> */
+    /* <!-- Special_category_section -->
+<!-- .......................................... --> */
+
+.Special_category_section{
+
+    height: 400px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+/* =================== */
+
+.Special_category_content_items{
+
+    display: grid;
+    text-align: left;
+    grid-template-columns:repeat(4,1fr) ;
+
+}
+
+/* =================== */
+
+.Special_category_content_items_1_img img,.Special_category_content_items2_img img
+,.Special_category_content_items_3_img img,.Special_category_content_items_4_img img{
+    height: 300px;
+    width: 300px;
+}
+
+/* =================== */
+
+.Special_category_content_items_1_span_1 span,.Special_category_content_items_2_span_1 span
+,.Special_category_content_items_3_span_1 span,.Special_category_content_items_4_span_1 span
+,.Special_category_content_items_1_span_2 span,.Special_category_content_items_2_span_2 span
+,.Special_category_content_items_3_span_2 span,.Special_category_content_items_4_span_2 span
+{
+
+    text-align: left;
+
+}
+
+/* =================== */
+
+.Special_category_content_items_1_span_1 span,.Special_category_content_items_2_span_1 span
+,.Special_category_content_items_3_span_1 span,.Special_category_content_items_4_span_1 span
+{
+
+    line-height: 25px;
+    color: gray;    
+    font-size: 18px;
+
+}
+
+/* =================== */
+
+.Special_category_content_items_1_span_2 span,.Special_category_content_items_2_span_2 span
+,.Special_category_content_items_3_span_2 span,.Special_category_content_items_4_span_2 span
+{
+
+    color: rgb(0, 0, 0);    
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+/* =================== */
+
+.Special_category_content_smbl{ 
+
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    display:inline;
+
+}
+
+/* =================== */
+
+.Special_category_content_smbl span{ 
+
+    position: absolute;
+    color: rgb(255, 255, 255); 
+    height: 30px;
+    width: 30px;
+    background-color: brown;   
+    font-size: 25px;
+    font-weight: bold;
+    display:inline;
+    text-align: center;
+    margin-left: 50px;
+    visibility: hidden;
+
+}
+
+/* =================== */
+
+.Special_category_content_items_1:hover .Special_category_content_smbl span{ 
+
+    visibility: visible;
+
+}
+
+/* =================== */
+
+.Special_category_content_items_2:hover .Special_category_content_smbl span{ 
+
+    visibility: visible;
+
+}
+
+/* =================== */
+
+.Special_category_content_items_3:hover .Special_category_content_smbl span{ 
+
+    visibility: visible;
+
+}
+
+/* =================== */
+
+.Special_category_content_items_4:hover .Special_category_content_smbl span{ 
+
+    visibility: visible;
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* <!-- ================================================================================== -->
+    <!-- Penelope_Astrid_section -->  
+<!-- .......................................... --> */
+
+
+.Penelope_Astrid_section{
+
+    height: 320px;
+    text-align: center;
+    margin: auto;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items{
+
+    margin-top: 100px;
+    display: grid;
+    text-align: left;
+    grid-template-columns:2fr 1fr 1fr  ;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_details{
+
+    background-color: rgb(231, 219, 219);
+    margin-right: 15px;
+    padding: 20px;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_details i{
+
+    color: rgb(77, 9, 9);
+    font-size: 40px;
+    margin-right: 10px;
+    padding: 5px;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_details_title_1 {
+
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_details_title_2 {
+
+    color: rgb(82, 78, 78);
+    font-size: 18px;
+    margin-left: 65px;
+    margin-bottom:15px;
+    font-weight: normal;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_details_span {
+
+    color: rgb(68, 7, 7);
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+/* =================== */
+
+.b_lins{
+
+    margin-top: 50px;
+    width: 580px;
+
+    position: relative;
+    overflow: auto;
+    padding-right: -230px;
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_details_lin1,.Penelope_Astrid_content_items_details_lin2,.Penelope_Astrid_content_items_details_lin3 {
+    
+    display: inline;
+    height: 2px;
+    width: 60px;
+    background-color: brown;
+    float: right;
+    margin: 5px;
+    margin-right: 5px;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_item_1_txt,.Penelope_Astrid_content_items_item_2_txt{
+
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_item_1_txt span,.Penelope_Astrid_content_items_item_2_txt span{
+
+    color: rgb(99, 11, 11);
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_item_1_txt h1,.Penelope_Astrid_content_items_item_2_txt h1{
+
+    color: rgb(0, 0, 0);
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_details h1,.Penelope_Astrid_content_items_details h2,.Penelope_Astrid_content_items_details span
+{
+    margin-top: 5px;
+    text-align: left;
+    /* color: black; */
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_item_1_img img,.Penelope_Astrid_content_items_item_2_img img{
+   
+    width: 300px;
+    height: 300px;
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_item_1,.Penelope_Astrid_content_items_item_2{
+
+    transition-duration: 0.75s;
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_item_1:hover{
+
+    transform: scale(108%);
+
+}
+
+/* =================== */
+
+.Penelope_Astrid_content_items_item_2:hover{
+
+    transform: scale(108%);
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* <!-- ================================================================================== -->
+    <!-- Delivery_section -->
+<!-- .......................................... --> */
+
+.Delivery_section{
+
+    height: 300px;
+    margin-top: 30px;
+}
+
+/* =================== */
+
+.Delivery_content_items{
+
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    border-bottom: 2px brown solid;
+    padding-bottom: 45px;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_1,.Delivery_content_items_2,
+.Delivery_content_items_3,.Delivery_content_items_4,
+.Delivery_content_items_5
+{
+
+    width:250px ;
+    text-align: center;
+    margin: auto;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_1,.Delivery_content_items_2,
+.Delivery_content_items_3,.Delivery_content_items_4
+
+{
+    border-right: 1px brown solid;
+
+}
+/* =================== */
+
+.Delivery_content_items__icon_1{
+    background-position: center 5px;
+    transition: all 1s;
+}
+
+/* =================== */
+
+.Delivery_content_items__icon_2{
+    background-position: center -180px;
+    transition: all 1s;
+}
+
+/* =================== */
+
+.Delivery_content_items__icon_3{
+    background-position: center -366px;
+    transition: all 1s;
+}
+
+/* =================== */
+
+.Delivery_content_items__icon_4{
+    background-position: center -549px;
+    transition: all 1s;
+}
+
+/* =================== */
+
+.Delivery_content_items__icon_5{
+
+    background-position: center -734px;
+    transition: all 1s;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_1_images,.Delivery_content_items_2_images,
+.Delivery_content_items_3_images,.Delivery_content_items_4_images,
+.Delivery_content_items_5_images
+{
+    margin: auto;
+}
+
+/* =================== */
+
+.Delivery_content_items__icon_1,.Delivery_content_items__icon_2
+,.Delivery_content_items__icon_3,.Delivery_content_items__icon_4
+,.Delivery_content_items__icon_5{
+
+    background-image:url("../images/service-icon.png") ;
+    background-repeat:no-repeat ;
+    height: 55px;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_1:hover .Delivery_content_items__icon_1{
+
+    background-position: center -90px;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_2:hover .Delivery_content_items__icon_2{
+    background-position: center -270px;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_3:hover .Delivery_content_items__icon_3{
+
+    background-position: center -455px;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_4:hover .Delivery_content_items__icon_4{
+
+    background-position: center -640px;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_5:hover .Delivery_content_items__icon_5{
+
+    background-position: center -825px;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_1_images_info,.Delivery_content_items_1_images,
+.Delivery_content_items_2_images_info,.Delivery_content_items_2_images,
+.Delivery_content_items_3_images_info,.Delivery_content_items_3_images,
+.Delivery_content_items_4_images_info,.Delivery_content_items_4_images,
+.Delivery_content_items_5_images_info,.Delivery_content_items_5_images
+{
+    display: block;
+}
+
+/* =================== */
+
+.Delivery_content_items_1_span_1 span,.Delivery_content_items_2_span_1 span,
+.Delivery_content_items_3_span_1 span,.Delivery_content_items_4_span_1 span,
+.Delivery_content_items_5_span_1 span
+{
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+/* =================== */
+
+.Delivery_content_items_1_span_2 span,.Delivery_content_items_2_span_2 span,
+.Delivery_content_items_3_span_2 span,.Delivery_content_items_4_span_2 span,
+.Delivery_content_items_5_span_2 span
+{
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(129, 129, 134);
+    font-size: 16px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* <!-- ================================================================================== -->
+    <!-- Featured_Products_section -->
+<!-- .......................................... --> */
+
+.Featured_Products_section{
+
+    padding-top: -40px;
+    padding-bottom: 40px;
+    margin: auto;
+
+}
+
+/* =================== */
+
+.Featured_Products_content_items{
+
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+
+}
+
+/* =================== */
+
+.Featured_Products_content_item{
+
+    position: relative;
+    margin:20px;
+    margin-top:20px;
+    height: 500px;
+    z-index: 4;
+
+}
+
+/* =================== */
+
+.Featured_Products_content_item_images{
+
+    position: relative;
+    /* margin: auto; */
+
+}
+
+/* =================== */
+
+.Featured_Products_content_item_images_face{
+
+    position: absolute;
+    z-index: 7;
+
+}
+
+/* =================== */
+
+.Featured_Products_content_item_images_back{
+
+    transform: scalex(0);
+    transition: 0.5s;
+
+    position: absolute;
+    z-index: 6;
+
+}
+
+/* =================== */
+
+.Featured_Products_content_item:hover .Featured_Products_content_item_images_back{
+    
+    /* transform: rotatey(180deg); */
+    opacity: 0.9;
+    transform: scalex(100%);
+    z-index: 7;
+
+}
+
+/* =================== */
+
+.Featured_Products_back_icons{
+    position: absolute;
+    display: inline;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+/* =================== */
+
+.Featured_Products_back_icons i{
+
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    background-color: rgba(124, 12, 12, 0.829);
+
+}
+
+/* =================== */
+
+.Delivery_content_items_1 h1,.Delivery_content_items_1,
+.Delivery_content_items_1 h2,.Delivery_content_items_1,
+.Delivery_content_items_1 span
+{
+
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+/* =================== */
+
+.Featured_Products_content_nav{
+
+    padding:15px 10px;
+
+}
+
+/* =================== */
+
+.Featured_Products_content_nav li{
+
+    list-style: none;
+    font-size: 16px;
+    display: inline;
+    margin: 10px 10px;
+    font-weight: bold;
+
+}
+
+
+/* =================== */
+
+.stars{
+
+    padding-top: 10px;
+    padding-right: 200px;
+}
+
+/* =================== */
+
+.info{
+
+margin-top: 450px;
+
+}
+
+/* =================== */
+
+.stars .Featured_Products_content_items_ylo_stars
+,.stars .Featured_Products_content_items_blak_stars
+{
+
+    display: inline;
+    margin-left:-5px;
+
+}
+
+/* =================== */
+
+.Featured_Products_content_items_ylo_stars i{
+
+    color: rgb(218, 159, 32);
+
+}
+
+/* =================== */
+
+.Featured_Products_content_items_blak_stars i{
+
+    color: rgb(0, 0, 0);
+
+}
+
+/* =================== */
+
+.Featured_Products_content_items_1_span_1,
+.Featured_Products_content_items_1_span_2,
+.Featured_Products_content_items_1_span_3,
+.Featured_Products_category_content_items_1_span_2,
+.Featured_Products_category_content_items_2_span_2,
+.Featured_Products_category_content_items_3_span_2,
+.stars .Featured_Products_content_items_ylo_stars
+,.stars .Featured_Products_content_items_blak_stars
+{
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* =================== */
+
+.Featured_Products_content_items_1_span_1,
+.Featured_Products_content_items_1_span_2,
+.Featured_Products_content_items_1_span_3
+{
+    color: rgb(100, 94, 94);
+    font-size: 16px;
+}
+
+/* =================== */
+
+.Featured_Products_category_content_items_1_span_2,
+.Featured_Products_category_content_items_2_span_2,
+.Featured_Products_category_content_items_3_span_2
+{
+
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+/* =================== */
+
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* <!-- ================================================================================== -->
+    <!--         -->
+<!-- .......................................... --> */
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================================== */
+/* lec 10 */
+/* ================= */
+/* .div1{
+    width: 250px;
+    height: 200px;
+    border: 2px solid gray;  
+    /* عند اعطاء اى خاصيه للاب تورث لكل المحتوى من الابناء */
+    /* font-size: 20px; */
+/* }
+.title1{ */
+/* فى حاله اعطاء الخاصيه للابناء تلغى المعطاه من قبل للاب مخالفه للاب معطى من قبل ت */
+    /* font-size: 12px; 
+/* } */
+/* ========== */
+/* الوحدات */
+/* px بكسل */
+/* em   relateve to parent element مرتبطه بالمعطى للعنصر الاب */
+/* rem   relateve to :root element  16 px افتراضى    مرتبطه بالافتراضى لبيئه التطوير   / */
+/* vh -- vw   ==== راجع للمشهد - الشاشه الخاصه بك */
+/* ========== */
+
+/* سؤال امتحان 48-49-50 */
+/* .div1 p{
+    all paragraphes in div 1 سواء ابناء او احفاد
+} */
+
+/* .div1 > p{
+    paragraphes in div 1 ابناء مباشرين فقط
+} */
+
+/* .div1  .div2 p{
+    paragraphes in div 2 ابناء مباشرين فقط
+} */
+
+/* .div2 + p{
+    paragraphes in  div2 اخ مباشر تالى   فقط
+    direct sepling selector   الاخ التالى مباشره
+} */
+
+/* .div2 ~ p{
+    paragraphes in  div2 اخ مباشر كلهم   فقط
+    genral sepling selector   الاخ كلهمgm مباشره
+} */
+/* /* ================================================== */
+/* exam 2 */
+/* ================================================== */ 
+/* style_inline     id    (class | psodo classes | attr selector)    element] */
+                     /* 2               4                                     0 */
+
